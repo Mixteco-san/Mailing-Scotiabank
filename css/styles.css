@@ -1,0 +1,195 @@
+/*             -----  Global styles ----        */
+:root{
+    --red-scotia: #ed0722;
+    --darkred-scotia: #780411;
+    --purple-scotia: #8230DF;
+    --green-scotia: #00A123;
+    --blue-link: #1B94CF;
+    --white: #ffffff;
+    --black: #000000;
+    --porcent100: 100%;
+    --porcent50: 50%;
+    --font-scotia-logo: 'Josefin Sans', sans-serif;
+    --font-scotia-text: 'Open Sans', sans-serif;
+    --size-normal: 2rem;
+    --shadow: 0px 7px 19px -5px rgba(0,0,0,0.75);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1, h2{
+    font-family: var(--font-scotia-logo);
+}
+p, h3{
+    font-family: var(--font-scotia-text);
+}
+a{
+    text-decoration: none;
+    color: var(--blue-link);
+    font-weight: bolder;
+}
+
+.presentation__text-greeting, 
+.offers__p--first, 
+.offers__offer-text-p, 
+.offers__offer-text-btn, 
+.offers__alert-messasge, 
+.footer__logo--txt{
+    font-size: var(--size-normal);
+}
+
+.navbar,
+.presentation__text-greeting,
+.offers__offer,
+.offers__offer-img img,
+.offers__alert,
+.footer__logo-socialmedia,
+.footer__logo-socialmedia-icons,
+.footer__logo-phone,
+.footer__logo-phone--circle{
+    display: flex;
+}
+
+.offers__alert,
+.footer__logo-socialmedia,
+.footer__logo-phone--circle{
+    justify-content: center;
+    align-items: center;
+}
+
+/*             -----  Navbar ----        */
+
+.navbar{
+    width: var(--porcent100);
+    height: 100px;
+    background: var(--red-scotia);
+    color: var(--white);
+    align-items: center;
+}
+.navbar__title{
+    margin: 0 60px;
+    font-size: 2.6rem;
+}
+
+/*             -----  Presentation ----        */
+.presentation{
+    background: url(https://drive.google.com/uc?id=1qTATe54xXzixcmJNhVZg5-McCwkZ1Pm2) bottom center;
+    overflow: hidden;
+    height: 600px;
+}
+.presentation__text{
+    padding: 40px 60px;
+}
+.presentation__text-greeting--user{
+    color: var(--green-scotia);
+    margin-left: 10px;
+}
+.presentation__text--h1{
+    margin: 50px 0;
+    font-size: 4.5rem;
+}
+.presentation__card{
+    width: 376px;
+    height: 238px;
+    margin: 20px auto 0 auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+.presentation__card img{
+    width: var(--porcent100);
+}
+
+/*             -----  Offes ----        */
+
+.offers__p--first{
+    margin: 80px;
+    text-align: center;
+}
+.offers__offer{
+    margin-bottom: 100px;
+}
+.offers__offer-img{
+    width: 40%;
+    overflow: hidden;
+}
+.offers__offer-img img{
+    position: relative;
+    left: -200px;
+}
+.offers__offer-text{
+    padding: 0 30px;
+    width: 60%;
+}
+.offers__offer-text-btn{
+    width: 400px;
+    height: 80px;
+    margin-top: 70px;
+    background: var(--red-scotia);
+    color: var(--white);
+    border-radius: 10px;
+    border: 0;
+    font-weight: bolder
+}
+.offers__alert{
+    width: var(--porcent100);
+    height: 150px;
+    background: var(--darkred-scotia);
+    color: var(--white);
+}
+.offers__alert-icon{
+    margin-right: 40px;
+    font-size: 80px;
+}
+
+/*             -----  Footer ----        */
+
+.footer{
+    padding: 50px 80px;
+    text-align: center;
+}
+.footer__message{
+    font-size: 1.2rem;
+}
+.footer__message--CAT{
+    font-size: 1.5rem;
+}
+.footer__logo{
+    margin: 75px 0;
+}
+.footer__logo--h2{
+    color: var(--red-scotia);
+    font-size: 4rem;
+}
+.footer__logo-socialmedia{
+    width: var(--porcent100);
+    margin: 40px auto;
+}
+.footer__logo-socialmedia-p,
+.footer__logo-phone--text{
+    font-size: 1.8rem;
+}
+.footer__logo-socialmedia-icons{
+    margin-left: 50px;
+}
+.footer__logo-socialmedia-icons-i{
+    font-size: 40px;
+    margin: 0 30px;
+}
+.footer__logo-phone{
+    margin: 0 auto;
+    justify-content: center;
+}
+.footer__logo-phone--circle{
+    border-radius: 50%;
+    border: solid 1px var(--black);
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    margin-right: 20px;
+}
+.footer__logo-phone--text{
+    margin: auto 0;
+}
